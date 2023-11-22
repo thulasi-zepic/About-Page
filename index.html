@@ -32,9 +32,10 @@
   <section class="header-section">
     <div class="header-content">
       <img src="images/Frame-26080369.jpg" alt="header-banner">
-      <span class="header-pg">
+      <h1 class="header-pg">
         We bring everyone together for the customer. <br>
-        <span> Like never before.</span>
+        <span> Like never before.
+      </h1>
       </span>
     </div>
     <!-- <div class="header-content">
@@ -54,7 +55,8 @@
       <div class="join-line"></div>
       <span>
         <p class="team-two">
-          Marketing, Sales and Customer Success. No more data silos. Just great connected experiences.
+          Marketing, Sales and Customer Success. No more data silos.
+          <br>Just great connected experiences.
         </p>
         <button class="waitlist">
           Join the waitlist! <img src="images/arrow-right-white.svg" alt="arrow-right" /></button>
@@ -131,18 +133,13 @@
 
       <div class="began-tell">
         <p> Tell us your goals and we are here to help. If our products help you
-          scale, we’ll happily take some coin. If not, no worries,  </p>
+          scale, we’ll happily take some coin. If not, no worries, </p>
 
         <p> let’s still see how we can help you hit those goals. Except, maybe for
           birthday party invites, no strings attached. Just like real good
           friends do 🙂</p>
 
       </div>
-
-
-
-
-
     </div>
   </section>
   <section class="we-roll-section">
@@ -393,12 +390,25 @@
         e.preventDefault();
 
         links.forEach(function (link) {
-          link.classList.remove('active', 'clicked');
+          link.classList.remove('active');
         });
 
-        link.classList.add('active', 'clicked');
+        link.classList.add('active');
       });
     });
+    //  const links = document.querySelectorAll('.nav-item a');
+
+    // links.forEach(function (link) {
+    //   link.addEventListener('click', function (e) {
+    //     e.preventDefault();
+
+    //     links.forEach(function (link) {
+    //       link.classList.remove('active', 'clicked');
+    //     });
+
+    //     link.classList.add('active', 'clicked');
+    //   });
+    // });
 
   </script>
 </body>
