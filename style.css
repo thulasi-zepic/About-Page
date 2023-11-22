@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Rubik:wght@700&display=swap');
 
 * {
   padding: 0;
@@ -8,24 +9,25 @@
 
 :root {
   --main-font: "Poppins", sans-serif;
+  --sec-font: "Figtree", sans-serif;
   --base-font-size: 16px;
   --default-width: 1440px;
   --join-color: #eff1f2;
   --font-color: #173768;
   --font-header-color: #4b4c50;
   --background: #fff;
-  --who-pg-color-one: #181818;
+  --who-pg-color-one: #252525;
   --who-pg-color-two: #666;
   --line: #ededed;
   --large-font-size: 55px;
-  --began-pg: #000;
+  --began-pg: #252525;
   --epic-line: #f8f7fe;
   /* --frame-word:#6DC7EB; */
 
   --headboard: #3d29a1;
   --began-bg: #f5f5f5;
-  --h3-color: #181818;
-  --epic-frame-color: #323338;
+  --h3-color: #252525;
+  --epic-frame-color: #252525;
   --began-linear: linear-gradient(0deg,
       rgba(237, 160, 168, 0.3) 0%,
       rgba(237, 160, 168, 0.3) 100%),
@@ -82,6 +84,8 @@ nav {
 .zepic-logo {
   max-width: 150px;
 }
+
+
 
 .nav-item span {
   position: relative;
@@ -190,15 +194,18 @@ nav {
 
 
 .header-pg {
+  font-size: 42px;
+  line-height: 56px;
   color: var(--background);
-  font-size: 55px;
+  /* font-size: 55px; */
   position: absolute;
-  max-width: 531px;
+  max-width: 650px;
   left: 210px;
   top: 250px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 72px;
+  /* font-weight: 800; */
+  font-weight: 700;
+  /* line-height: 72px; */
 }
 
 .header-pg span {
@@ -313,12 +320,15 @@ nav {
 .team-two {
   align-self: stretch;
   color: var(--background);
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
   /* font-size: var(--base-font-size); */
   font-style: normal;
   font-weight: 400;
   /* line-height: 32px; */
   /* max-width: 664px; */
-  font-size: 20px;
+  font-size: 18px;
   /* font-size: 18px; */
   line-height: 37px;
   /* 200% */
@@ -458,12 +468,16 @@ nav {
 }
 
 .who-pg-one {
+
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
   color: var(--who-pg-color-one);
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   font-style: normal;
   font-weight: 400;
   max-width: 560px;
-  line-height: 32px;
+  /* line-height: 32px; */
 }
 
 .who-pg-two {
@@ -527,10 +541,9 @@ nav {
 
 .began-pg p {
   color: var(--began-pg);
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* .began-pg p span {
@@ -539,10 +552,9 @@ nav {
 
 .began-pg a {
   color: var(--began-pg);
-  font-size: 1.25rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .began-pg a:hover {
@@ -582,10 +594,21 @@ nav {
 .began-want p {
   max-width: 448px;
   color: var(--h3-color);
-  font-size: 1.125rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
+}
+
+
+.began-tell {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  max-width: 448px;
+  color: var(--h3-color);
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
 }
 
 /* weroll-section */
@@ -624,10 +647,9 @@ nav {
 .roll-content p {
   color: var(--who-pg-color-one);
   font-family: Poppins;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px;
+  font-family: var(--sec-font);
+  font-size: 18px;
+  line-height: 30px;
   max-width: 770px;
 }
 
@@ -674,8 +696,9 @@ nav {
   font-size: 1rem;
   font-style: normal;
   max-width: 444px;
-  font-weight: 400;
-  line-height: normal;
+  font-family: var(--sec-font);
+  /* font-size: 18px; */
+  line-height: 30px;
 }
 
 .letter {
