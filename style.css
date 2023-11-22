@@ -73,7 +73,7 @@ nav {
 
 .nav-menu {
   display: inline-flex;
-  /* align-items: center; */
+  align-items: center;
   padding-left: 294px;
   text-align: right;
   gap: 32px;
@@ -82,6 +82,7 @@ nav {
 }
 
 .zepic-logo {
+  margin-top: -10px;
   max-width: 150px;
 }
 
@@ -110,6 +111,10 @@ nav {
 }
 
 
+.nav-item{
+  min-height: 30px;
+}
+
 
 .nav-item span:hover {
   background: #6547f7;
@@ -126,25 +131,33 @@ nav {
   font-size: var(--base-font-size);
   font-style: normal;
   font-weight: 500;
-  display: inline-block;
+  /* display: inline-block; */
   line-height: normal;
   text-decoration: none;
   transition: border-bottom 0.3s;
 
 }
 
-
+/* 
 .nav-item a.clicked {
   color: #6547F7;
+} */
+
+.nav-item a:hover {
+  color: #6547F7; 
+  /* box-shadow: inset 0 -3px #146ef5; */
+
 }
 
-.nav-item a.active::after {
+.nav-item a:hover::after {
+  /* box-shadow: inset 0 -3px #146ef5; */
   content: "";
-  height: 4px;
+  height: 3px;
   color: #6547F7;
-  margin-top: 7px;
+  position: relative;
+  top: 7px;
   background: #6547F7;
-  border-radius: 7px;
+  border-radius: 8px;
   display: block;
   /* color: #6547F7; 
   border-radius: 7px;
@@ -201,7 +214,7 @@ nav {
   position: absolute;
   max-width: 650px;
   left: 210px;
-  top: 250px;
+  top: 300px;
   font-style: normal;
   /* font-weight: 800; */
   font-weight: 700;
@@ -294,7 +307,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 80px;
+  gap: 278px;
 
 }
 
@@ -359,6 +372,7 @@ nav {
 .waitlist:hover {
   border-color: var(--background);
   color: white;
+  background: #593ce7;
   box-shadow: 0 0.5em 0.5em -0.4em var(--background);
   transform: translateY(-0.25em);
   cursor: pointer;
@@ -627,6 +641,7 @@ nav {
   margin-right: auto;
   margin-bottom: 32px;
   padding: 0px 210px;
+  margin-top: -20px;
   max-width: 1440px;
   flex-direction: column;
   align-items: flex-start;
@@ -716,26 +731,26 @@ nav {
   right: 1px;
   bottom: 3px;
   color: #6dc7eb;
-  text-shadow: 4px 4px 8px #6dc7eb, 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 8px #60a5c1, 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #two {
   left: 99px;
   bottom: 90px;
   color: #ebcb62;
-  text-shadow: 4px 4px 8px #ebcb62, 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 8px #c6a846, 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #three {
   right: 1px;
   color: #ffb87d;
-  text-shadow: 4px 4px 8px #ffb87d, 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 8px #c49269, 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #four {
   left: 92px;
   color: #eda0a8;
-  text-shadow: 4px 4px 8px #eda0a8, 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-shadow: 4px 4px 8px #c9878e, 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 #union1 {
@@ -872,7 +887,7 @@ nav {
   /* font-size: 1.25rem; */
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   line-height: normal;
 }
 
