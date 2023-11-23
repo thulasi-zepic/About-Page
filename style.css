@@ -11,7 +11,7 @@
   --main-font: "Poppins", sans-serif;
   --sec-font: "Figtree", sans-serif;
   --base-font-size: 16px;
-  --default-width: 1440px;
+  --default-width: 100%;
   --join-color: #eff1f2;
   --font-color: #173768;
   --font-header-color: #4b4c50;
@@ -64,6 +64,7 @@ header {
 
 nav {
   display: flex;
+  margin:0 auto;
   padding: 26px 80px 16px;
   justify-content: space-between;
   align-items: center;
@@ -295,6 +296,7 @@ nav {
 
 .join-team {
   display: flex;
+  margin:0 auto;
   max-width: 1040px;
   margin-left: 210px;
   /* margin-left: auto; */
@@ -423,6 +425,11 @@ nav {
   align-items: flex-start;
   gap: 32px;
   margin-bottom: 120px;
+}
+
+
+.who-section{
+  margin:0 auto
 }
 
 .who-word {
