@@ -890,10 +890,12 @@ nav {
 }
 
 .headshot img {
-  width: 240px;
+/*   width: 240px; */
+  width:auto;
+  margin:0 auto;
   height: 180px;
-  position: relative;
-  top: 15px;
+/*   position: relative; */
+/*   top: 15px; */
 }
 
 .headboard {
